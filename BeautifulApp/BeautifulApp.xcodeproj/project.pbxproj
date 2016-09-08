@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		924D98711D801B12005B308A /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 924D986F1D801B12005B308A /* NewsTableViewCell.m */; };
+		924D98721D801B12005B308A /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 924D98701D801B12005B308A /* NewsTableViewCell.xib */; };
 		92F4E58D1D5DA4740023AFD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F4E58C1D5DA4740023AFD0 /* main.m */; };
 		92F4E5901D5DA4740023AFD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F4E58F1D5DA4740023AFD0 /* AppDelegate.m */; };
 		92F4E5931D5DA4740023AFD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F4E5921D5DA4740023AFD0 /* ViewController.m */; };
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		924D986E1D801B12005B308A /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		924D986F1D801B12005B308A /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
+		924D98701D801B12005B308A /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		92F4E5881D5DA4730023AFD0 /* BeautifulApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautifulApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F4E58C1D5DA4740023AFD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92F4E58E1D5DA4740023AFD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -113,6 +118,9 @@
 				92F4E59F1D5DA4740023AFD0 /* Info.plist */,
 				92F4E5971D5DA4740023AFD0 /* BeautifulApp.xcdatamodeld */,
 				92F4E58B1D5DA4730023AFD0 /* Supporting Files */,
+				924D986E1D801B12005B308A /* NewsTableViewCell.h */,
+				924D986F1D801B12005B308A /* NewsTableViewCell.m */,
+				924D98701D801B12005B308A /* NewsTableViewCell.xib */,
 			);
 			path = BeautifulApp;
 			sourceTree = "<group>";
@@ -250,6 +258,7 @@
 			files = (
 				92F4E59E1D5DA4740023AFD0 /* LaunchScreen.storyboard in Resources */,
 				92F4E59B1D5DA4740023AFD0 /* Assets.xcassets in Resources */,
+				924D98721D801B12005B308A /* NewsTableViewCell.xib in Resources */,
 				92F4E5961D5DA4740023AFD0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92F4E5931D5DA4740023AFD0 /* ViewController.m in Sources */,
+				924D98711D801B12005B308A /* NewsTableViewCell.m in Sources */,
 				92F4E5901D5DA4740023AFD0 /* AppDelegate.m in Sources */,
 				92F4E58D1D5DA4740023AFD0 /* main.m in Sources */,
 				92F4E5991D5DA4740023AFD0 /* BeautifulApp.xcdatamodeld in Sources */,
@@ -506,6 +516,7 @@
 				92F4E5BA1D5DA4740023AFD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92F4E5BB1D5DA4740023AFD0 /* Build configuration list for PBXNativeTarget "BeautifulAppTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +525,7 @@
 				92F4E5BD1D5DA4740023AFD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92F4E5BE1D5DA4740023AFD0 /* Build configuration list for PBXNativeTarget "BeautifulAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +534,7 @@
 				92F4E5C01D5DA4740023AFD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
