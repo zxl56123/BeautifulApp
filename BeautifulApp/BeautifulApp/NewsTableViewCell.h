@@ -12,6 +12,6 @@
 
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 
--(void)setTitle:(NSString *)title newsContent:(NSString *)newsContent;
+-(void)setTitle:(NSAttributedString *)title newsContent:(NSString *)newsContent;
 
 @end

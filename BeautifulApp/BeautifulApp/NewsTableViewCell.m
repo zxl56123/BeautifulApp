@@ -36,9 +36,10 @@
 }
 
 
--(void)setTitle:(NSString *)title newsContent:(NSString *)newsContent
+-(void)setTitle:(NSAttributedString *)title newsContent:(NSString *)newsContent
 {
-    _title.text = title;
+    _title.attributedText = title;
+    _title.font = [UIFont systemFontOfSize:11];
     _newsContent.text = newsContent;
 }
 

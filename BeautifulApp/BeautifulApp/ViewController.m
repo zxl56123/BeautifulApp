@@ -30,8 +30,14 @@
     [self.view addSubview:_tableView];
     
     //假数据
-    self.ar_title = @[@"习近平出席G20领导人峰会活动纪实",@"习近平谈一带一路这三年",@"上网"];
-    self.ar_Content = @[@"初秋九月，钱江潮起。世界的目光聚焦“G20杭州时间",@"3年前的2013年9月7日 ，习近平在哈萨克斯坦纳扎尔巴耶夫大学发表演讲，提出了共同建设“丝绸之路经济带”的畅想。",@"lailailai"];
+    self.ar_title = @[
+                      @"<font size=\"4.7\" color=\"red\">习近平出席G20领导人峰会活动纪实</font>",
+                      @"习近平谈一带一路这三年",
+                      @"上网"];
+    self.ar_Content = @[
+                        @"初秋九月，钱江潮起。世界的目光聚焦“G20杭州时间",
+                        @"3年前的2013年9月7日 ，习近平在哈萨克斯坦纳扎尔巴耶夫大学发表演讲，提出了共同建设“丝绸之路经济带”的畅想。",
+                        @"lailailai"];
 
     [_tableView reloadData];
 }
@@ -50,7 +56,9 @@
 {
     NewsTableViewCell *cell = [NewsTableViewCell cellWithTableView:tableView];
     
-    [cell setTitle:_ar_title[indexPath.row] newsContent:_ar_Content[indexPath.row]];
+    NSAttributedString * attrStr = [[NSAttributedString alloc] initWithData:[_ar_title[indexPath.row] dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
+    
+    [cell setTitle:attrStr newsContent:_ar_Content[indexPath.row]];
     
     return cell;
 }
